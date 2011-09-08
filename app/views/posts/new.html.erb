@@ -1,0 +1,8 @@
+<ul>
+<%= form_for @post, :url => posts_path(@post) do |f| %>
+    <li><%= f.label :name, "Name:" %></li>
+    <li><%= f.text_field :name %></li>
+    <li><%= f.text_area :content %></li>
+    <li><%= f.submit "Create" %></li>
+<% end %>
+</ul>
